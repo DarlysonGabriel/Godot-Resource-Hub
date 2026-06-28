@@ -1,4 +1,4 @@
-# Godot Resource Hub
+# Godot-Resource-Hub
 
 Um repositório com arquivos `.tres` e `.res` prontos para uso na Godot Engine.
 
