@@ -34,4 +34,4 @@ O objetivo deste repositório é disponibilizar uma biblioteca de recursos pront
 
 ## Novidades
 
-Todos podem colaborar com mais arquivos. Ou seja, se você tiver algum arquivo de configuração e quiser compartilhar, o lugar é aqui
+Todos podem colaborar com mais arquivos. Ou seja, se você tiver algum arquivo de configuração e quiser compartilhar, o lugar é aqui!
