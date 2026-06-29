@@ -37,10 +37,10 @@ transform = Transform3D(-0.8660254, -0.43301278, 0.24999996, -0.39888754, 0.8998
 shadow_enabled = true
 
 [node name="Wood" parent="." unique_id=805351591 instance=ExtResource("1_r2ygg")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.03404379, 0, 0.3664689)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.03404379, 0, 0.27700663)
 
 [node name="Glass" parent="." unique_id=1629639700 instance=ExtResource("1_r2ygg")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.09301233, 4.0345097, -7.036291)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.09301233, 4.0345097, 13.53783)
 mesh = ExtResource("2_7pegx")
 
 [node name="Stone" parent="." unique_id=1072602627 instance=ExtResource("1_r2ygg")]

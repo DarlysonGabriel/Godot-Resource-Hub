@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cxyjqrwbt25hl"
-path.s3tc="res://.godot/imported/stained_pine_disp_4k.png-cd2852e1ee2f80f686ee63f74725c9cd.s3tc.ctex"
+uid="uid://bephweshsvd16"
+path.s3tc="res://.godot/imported/Wood.jpg-4fe8f13ee961bc04274eb397d3adbe80.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/3D-textures/textures/wood/stained_pine_disp_4k.png"
-dest_files=["res://.godot/imported/stained_pine_disp_4k.png-cd2852e1ee2f80f686ee63f74725c9cd.s3tc.ctex"]
+source_file="res://assets/3D-textures/textures/wood/Wood.jpg"
+dest_files=["res://.godot/imported/Wood.jpg-4fe8f13ee961bc04274eb397d3adbe80.s3tc.ctex"]
 
 [params]
 
@@ -26,8 +26,8 @@ compress/normal_map=1
 compress/channel_pack=0
 mipmaps/generate=true
 mipmaps/limit=-1
-roughness/mode=1
-roughness/src_normal="res://3d/textures/stained_pine_disp_4k.png"
+roughness/mode=0
+roughness/src_normal=""
 process/channel_remap/red=0
 process/channel_remap/green=1
 process/channel_remap/blue=2

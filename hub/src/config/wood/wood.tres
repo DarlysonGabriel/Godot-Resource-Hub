@@ -1,7 +1,7 @@
 [gd_resource type="BoxMesh" format=3 uid="uid://duys0uxep77ta"]
 
-[ext_resource type="Texture2D" uid="uid://bephweshsvd16" path="res://assets/3D-textures/textures/wood/stained_pine_diff_4k.jpg" id="1_lgyw6"]
-[ext_resource type="Texture2D" uid="uid://cxyjqrwbt25hl" path="res://assets/3D-textures/textures/wood/stained_pine_disp_4k.png" id="2_n6155"]
+[ext_resource type="Texture2D" uid="uid://bephweshsvd16" path="res://assets/3D-textures/textures/wood/Wood.jpg" id="1_lgyw6"]
+[ext_resource type="Texture2D" uid="uid://cxyjqrwbt25hl" path="res://assets/3D-textures/textures/wood/Wood-Roughness.png" id="2_n6155"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rslbg"]
 disable_fog = true
@@ -19,4 +19,4 @@ grow = true
 
 [resource]
 material = SubResource("StandardMaterial3D_rslbg")
-size = Vector3(12.645264, 1, 9.625732)
+size = Vector3(12.645264, 1, 12.712067)
