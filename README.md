@@ -10,7 +10,7 @@ Este repositório **não contém sistemas ou scripts prontos**.
 
 Ou seja, você **não encontrará** inventários, IA, movimentação de personagens, interfaces ou qualquer outro sistema programado. O foco deste projeto é disponibilizar apenas configurações reutilizáveis de recursos da Godot.
 
-## O que você encontrará?
+### O que você encontrará?
 
 Diversos arquivos de configuração que podem ser utilizados como complemento para os seus projetos, como:
 
@@ -31,4 +31,7 @@ O objetivo deste repositório é disponibilizar uma biblioteca de recursos pront
 * Godot Engine
 * Arquivos `.tres`
 * Arquivos `.res`
-  
+
+## Novidades
+
+Todos podem colaborar com mais arquivos. Ou seja, se você tiver algum arquivo de configuração e quiser compartilhar, o lugar é aqui
