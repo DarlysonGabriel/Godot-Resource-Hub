@@ -3,6 +3,8 @@
 [ext_resource type="PackedScene" uid="uid://c1c5odb8pmfjb" path="res://assets/3D-models/cube_3d.tscn" id="1_r2ygg"]
 [ext_resource type="BoxMesh" uid="uid://dct0v0bi8fjqy" path="res://src/config/glass/glass.tres" id="2_7pegx"]
 [ext_resource type="Texture2D" uid="uid://chciteixt08tn" path="res://assets/3D-textures/textures/stone/Stone-Roughness.jpg" id="3_60w3k"]
+[ext_resource type="Texture2D" uid="uid://bephweshsvd16" path="res://assets/3D-textures/textures/wood/Wood.jpg" id="4_60w3k"]
+[ext_resource type="Texture2D" uid="uid://cxyjqrwbt25hl" path="res://assets/3D-textures/textures/wood/Wood-Roughness.png" id="5_vt2b5"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_vt2b5"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -14,6 +16,18 @@ sky_material = SubResource("ProceduralSkyMaterial_vt2b5")
 [sub_resource type="Environment" id="Environment_krvts"]
 background_mode = 2
 sky = SubResource("Sky_gw8d8")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sdtv6"]
+albedo_texture = ExtResource("4_60w3k")
+metallic = 1.0
+metallic_specular = 0.0
+roughness_texture = ExtResource("5_vt2b5")
+emission_enabled = true
+uv1_triplanar_sharpness = 0.0006011448
+
+[sub_resource type="BoxMesh" id="BoxMesh_s1ctu"]
+material = SubResource("StandardMaterial3D_sdtv6")
+size = Vector3(13.510025, 1, 11.99942)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_h5nps"]
 roughness_texture = ExtResource("3_60w3k")
@@ -36,8 +50,9 @@ environment = SubResource("Environment_krvts")
 transform = Transform3D(-0.8660254, -0.43301278, 0.24999996, -0.39888754, 0.8998088, 0.17672792, -0.30147764, 0.05332896, -0.9519807, 0, 0, 0)
 shadow_enabled = true
 
-[node name="Wood" parent="." unique_id=805351591 instance=ExtResource("1_r2ygg")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.03404379, 0, 0.27700663)
+[node name="Wood-T1" parent="." unique_id=805351591 instance=ExtResource("1_r2ygg")]
+transform = Transform3D(0.99999714, 0.0017869695, -0.001579056, -0.0017870438, 0.99999845, -4.535895e-05, 0.001578972, 4.819712e-05, 0.99999875, -0.03404379, 0, 0.27700663)
+mesh = SubResource("BoxMesh_s1ctu")
 
 [node name="Glass" parent="." unique_id=1629639700 instance=ExtResource("1_r2ygg")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.09301233, 4.0345097, 13.53783)
