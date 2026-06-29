@@ -10,7 +10,7 @@ Aqui você encontrará recursos pré-configurados para objetos 2D e 3D, com o ob
   Ou seja, você **não encontrará** inventários, IA, movimentação de personagens, interfaces ou qualquer outro sistema programado. O foco deste projeto é disponibilizar apenas configurações reutilizáveis de recursos da Godot.
 
 * Todos os arquivos **precizarão de suas respectivas texturas**.
-  Isso quer disser que: Os arquivos `.res` e `.tres` só funcionarão melhor com essas texturas obrigatórias
+  Isso quer disser que: Os arquivos `.res` e `.tres` só funcionarão melhor com essas texturas obrigatórias.
 
 
 ### O que você encontrará?
