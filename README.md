@@ -31,3 +31,4 @@ O objetivo deste repositório é disponibilizar uma biblioteca de recursos pront
 * Godot Engine
 * Arquivos `.tres`
 * Arquivos `.res`
+  
