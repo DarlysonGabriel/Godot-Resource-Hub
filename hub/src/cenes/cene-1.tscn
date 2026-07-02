@@ -2,8 +2,8 @@
 
 [ext_resource type="PackedScene" uid="uid://c1c5odb8pmfjb" path="res://assets/3D-models/cube_3d.tscn" id="1_r2ygg"]
 [ext_resource type="BoxMesh" uid="uid://dct0v0bi8fjqy" path="res://src/config/glass/glass.tres" id="2_7pegx"]
-[ext_resource type="Texture2D" uid="uid://chciteixt08tn" path="res://assets/3D-textures/textures/stone/Stone-Roughness.jpg" id="3_60w3k"]
 [ext_resource type="Texture2D" uid="uid://bephweshsvd16" path="res://assets/3D-textures/textures/wood/Wood.jpg" id="4_60w3k"]
+[ext_resource type="BoxMesh" uid="uid://bj418knbkengi" path="res://src/config/stone/stone.tres" id="5_60w3k"]
 [ext_resource type="Texture2D" uid="uid://cxyjqrwbt25hl" path="res://assets/3D-textures/textures/wood/Wood-Roughness.png" id="5_vt2b5"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_vt2b5"]
@@ -29,18 +29,6 @@ uv1_triplanar_sharpness = 0.0006011448
 material = SubResource("StandardMaterial3D_sdtv6")
 size = Vector3(13.510025, 1, 11.99942)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_h5nps"]
-roughness_texture = ExtResource("3_60w3k")
-emission_energy_multiplier = 0.0
-emission_on_uv2 = true
-emission_texture = ExtResource("3_60w3k")
-normal_enabled = true
-normal_scale = -16.0
-
-[sub_resource type="BoxMesh" id="BoxMesh_xlx6m"]
-material = SubResource("StandardMaterial3D_h5nps")
-size = Vector3(15.21637, 1, 17.536133)
-
 [node name="Cene-1" type="Node3D" unique_id=1840760882]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=363815724]
@@ -60,4 +48,4 @@ mesh = ExtResource("2_7pegx")
 
 [node name="Stone" parent="." unique_id=1072602627 instance=ExtResource("1_r2ygg")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.261915, -0.25041723, 0.11521721)
-mesh = SubResource("BoxMesh_xlx6m")
+mesh = ExtResource("5_60w3k")
