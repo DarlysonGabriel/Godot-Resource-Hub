@@ -83,6 +83,10 @@ O sistema utilizará esse caminho para localizar e importar o pacote.
 
 ---
 
+# Antenção:
+
+Caso seu sistema tenha algo a mais, ou tenha que fazer passos extrar, crie uma pasta de `tutorial.md` para especificar os passso a passos 
+
 ## Pronto!
 
 Agora, basta dar seu commit e seu push no repositório.
