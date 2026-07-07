@@ -1,16 +1,16 @@
 [gd_scene format=3 uid="uid://be836x76754jq"]
 
-[ext_resource type="PackedScene" uid="uid://c1c5odb8pmfjb" path="res://assets/3D-models/cube_3d.tscn" id="1_r2ygg"]
-[ext_resource type="BoxMesh" uid="uid://dct0v0bi8fjqy" path="res://src/config/glass/glass type 1/glass.tres" id="2_7pegx"]
-[ext_resource type="Texture2D" uid="uid://bephweshsvd16" path="res://src/config/wood/type 1/wood/Wood.jpg" id="4_60w3k"]
-[ext_resource type="BoxMesh" uid="uid://bj418knbkengi" path="res://src/config/stone/stone type 1/stone.tres" id="5_60w3k"]
-[ext_resource type="Texture2D" uid="uid://cxyjqrwbt25hl" path="res://src/config/wood/type 1/wood/Wood-Roughness.png" id="5_vt2b5"]
+[ext_resource type="PackedScene" uid="uid://c1c5odb8pmfjb" path="res://assets/3D-models/cube_3d.tscn" id="1_rvrc5"]
+[ext_resource type="Texture2D" uid="uid://bephweshsvd16" path="res://src/config/wood/type 1/wood/Wood.jpg" id="2_7lss0"]
+[ext_resource type="Texture2D" uid="uid://cxyjqrwbt25hl" path="res://src/config/wood/type 1/wood/Wood-Roughness.png" id="3_bllho"]
+[ext_resource type="BoxMesh" uid="uid://dct0v0bi8fjqy" path="res://src/config/glass/glass type 1/glass.tres" id="4_ohm04"]
+[ext_resource type="BoxMesh" uid="uid://bj418knbkengi" path="res://src/config/stone/stone type 1/stone.tres" id="5_bajds"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sdtv6"]
-albedo_texture = ExtResource("4_60w3k")
+albedo_texture = ExtResource("2_7lss0")
 metallic = 1.0
 metallic_specular = 0.0
-roughness_texture = ExtResource("5_vt2b5")
+roughness_texture = ExtResource("3_bllho")
 emission_enabled = true
 uv1_triplanar_sharpness = 0.0006011448
 
@@ -21,23 +21,23 @@ size = Vector3(13.510025, 1, 11.99942)
 [sub_resource type="BoxMesh" id="BoxMesh_sdtv6"]
 size = Vector3(15.447388, 1, 16.095703)
 
-[node name="Cene-1" type="Node3D" unique_id=1840760882]
+[node name="Cene3D" type="Node3D" unique_id=1840760882]
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=2117611557]
 transform = Transform3D(-0.94942546, -0.04966043, 0.3100404, 0.09744665, 0.892057, 0.4412917, -0.29848847, 0.44918597, -0.8421024, 0, 0, 0)
 shadow_enabled = true
 
-[node name="Wood1" parent="." unique_id=805351591 instance=ExtResource("1_r2ygg")]
+[node name="Wood1" parent="." unique_id=805351591 instance=ExtResource("1_rvrc5")]
 transform = Transform3D(0.99999714, 0.0017869695, -0.001579056, -0.0017870438, 0.99999845, -4.535895e-05, 0.001578972, 4.819712e-05, 0.99999875, -0.03404379, 0, 0.27700663)
 mesh = SubResource("BoxMesh_s1ctu")
 
-[node name="Glass1" parent="." unique_id=1629639700 instance=ExtResource("1_r2ygg")]
+[node name="Glass1" parent="." unique_id=1629639700 instance=ExtResource("1_rvrc5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.824, 0, 0.05)
-mesh = ExtResource("2_7pegx")
+mesh = ExtResource("4_ohm04")
 
-[node name="Stone1" parent="." unique_id=1072602627 instance=ExtResource("1_r2ygg")]
+[node name="Stone1" parent="." unique_id=1072602627 instance=ExtResource("1_rvrc5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.262, 0, 0.115)
-mesh = ExtResource("5_60w3k")
+mesh = ExtResource("5_bajds")
 
 [node name="Empty1" type="MeshInstance3D" parent="." unique_id=989542207]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32.718246, 0, -0.57714844)
