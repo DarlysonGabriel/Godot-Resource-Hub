@@ -4,6 +4,8 @@ Um repositório com arquivos `.tres` e `.res` prontos para uso na Godot Engine.
 
 Aqui você encontrará recursos pré-configurados para objetos 2D e 3D, com o objetivo de facilitar a criação e organização dos seus projetos.
 
+Você poderá contribuir com seus próprios arquivos, projetos de configuração (mas isso será futuramente).
+
 ## ⚠️ Atenção
 
 * Este repositório **não contém sistemas ou scripts prontos**.
@@ -37,7 +39,9 @@ O objetivo deste repositório é disponibilizar uma biblioteca de recursos pront
 
 ## Novidades
 
-Todos podem colaborar com mais arquivos. Ou seja, se você
-tiver algum arquivo de configuração e quiser compartilhar, o lugar é aqui!
+Todos podem colaborar com mais arquivos. Ou seja, se você tiver algum arquivo de configuração e quiser compartilhar, o lugar é aqui!
+
+Futuramente, *adicuonarei tutoriais para vocês não se perderem* na hora de baixarem os arquivos.
+Isto também vale para vocês adicionarem.
 
 *Copyright (c) 2026 Darlyson Gabriel*
