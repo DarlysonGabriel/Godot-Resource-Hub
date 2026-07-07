@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://chciteixt08tn"
-path.s3tc="res://.godot/imported/Stone-Roughness.jpg-e3e2d7ffa3d7242c31c54f00fe3631c9.s3tc.ctex"
+uid="uid://bephweshsvd16"
+path.s3tc="res://.godot/imported/Wood.jpg-ad239a7f81cc3e4d4c83609634fb9e54.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/3D-textures/textures/stone/Stone-Roughness.jpg"
-dest_files=["res://.godot/imported/Stone-Roughness.jpg-e3e2d7ffa3d7242c31c54f00fe3631c9.s3tc.ctex"]
+source_file="res://src/config/wood/type 1/wood/Wood.jpg"
+dest_files=["res://.godot/imported/Wood.jpg-ad239a7f81cc3e4d4c83609634fb9e54.s3tc.ctex"]
 
 [params]
 
@@ -26,8 +26,8 @@ compress/normal_map=1
 compress/channel_pack=0
 mipmaps/generate=true
 mipmaps/limit=-1
-roughness/mode=1
-roughness/src_normal="res://assets/3D-textures/textures/relebook.com_ffach155803_rubble granite.jpg"
+roughness/mode=0
+roughness/src_normal=""
 process/channel_remap/red=0
 process/channel_remap/green=1
 process/channel_remap/blue=2

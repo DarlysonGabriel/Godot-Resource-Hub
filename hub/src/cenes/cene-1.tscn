@@ -1,21 +1,10 @@
 [gd_scene format=3 uid="uid://be836x76754jq"]
 
 [ext_resource type="PackedScene" uid="uid://c1c5odb8pmfjb" path="res://assets/3D-models/cube_3d.tscn" id="1_r2ygg"]
-[ext_resource type="BoxMesh" uid="uid://dct0v0bi8fjqy" path="res://src/config/glass/glass.tres" id="2_7pegx"]
-[ext_resource type="Texture2D" uid="uid://bephweshsvd16" path="res://assets/3D-textures/textures/wood/Wood.jpg" id="4_60w3k"]
-[ext_resource type="BoxMesh" uid="uid://bj418knbkengi" path="res://src/config/stone/stone.tres" id="5_60w3k"]
-[ext_resource type="Texture2D" uid="uid://cxyjqrwbt25hl" path="res://assets/3D-textures/textures/wood/Wood-Roughness.png" id="5_vt2b5"]
-
-[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_vt2b5"]
-sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
-ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
-
-[sub_resource type="Sky" id="Sky_gw8d8"]
-sky_material = SubResource("ProceduralSkyMaterial_vt2b5")
-
-[sub_resource type="Environment" id="Environment_krvts"]
-background_mode = 2
-sky = SubResource("Sky_gw8d8")
+[ext_resource type="BoxMesh" uid="uid://dct0v0bi8fjqy" path="res://src/config/glass/glass type 1/glass.tres" id="2_7pegx"]
+[ext_resource type="Texture2D" uid="uid://bephweshsvd16" path="res://src/config/wood/type 1/wood/Wood.jpg" id="4_60w3k"]
+[ext_resource type="BoxMesh" uid="uid://bj418knbkengi" path="res://src/config/stone/stone type 1/stone.tres" id="5_60w3k"]
+[ext_resource type="Texture2D" uid="uid://cxyjqrwbt25hl" path="res://src/config/wood/type 1/wood/Wood-Roughness.png" id="5_vt2b5"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sdtv6"]
 albedo_texture = ExtResource("4_60w3k")
@@ -29,23 +18,47 @@ uv1_triplanar_sharpness = 0.0006011448
 material = SubResource("StandardMaterial3D_sdtv6")
 size = Vector3(13.510025, 1, 11.99942)
 
+[sub_resource type="BoxMesh" id="BoxMesh_sdtv6"]
+size = Vector3(15.447388, 1, 16.095703)
+
 [node name="Cene-1" type="Node3D" unique_id=1840760882]
 
-[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=363815724]
-environment = SubResource("Environment_krvts")
-
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1941622918]
-transform = Transform3D(-0.8660254, -0.43301278, 0.24999996, -0.39888754, 0.8998088, 0.17672792, -0.30147764, 0.05332896, -0.9519807, 0, 0, 0)
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=2117611557]
+transform = Transform3D(-0.94942546, -0.04966043, 0.3100404, 0.09744665, 0.892057, 0.4412917, -0.29848847, 0.44918597, -0.8421024, 0, 0, 0)
 shadow_enabled = true
 
-[node name="Wood-T1" parent="." unique_id=805351591 instance=ExtResource("1_r2ygg")]
+[node name="Wood1" parent="." unique_id=805351591 instance=ExtResource("1_r2ygg")]
 transform = Transform3D(0.99999714, 0.0017869695, -0.001579056, -0.0017870438, 0.99999845, -4.535895e-05, 0.001578972, 4.819712e-05, 0.99999875, -0.03404379, 0, 0.27700663)
 mesh = SubResource("BoxMesh_s1ctu")
 
-[node name="Glass" parent="." unique_id=1629639700 instance=ExtResource("1_r2ygg")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.09301233, 4.0345097, 13.53783)
+[node name="Glass1" parent="." unique_id=1629639700 instance=ExtResource("1_r2ygg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.824, 0, 0.05)
 mesh = ExtResource("2_7pegx")
 
-[node name="Stone" parent="." unique_id=1072602627 instance=ExtResource("1_r2ygg")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.261915, -0.25041723, 0.11521721)
+[node name="Stone1" parent="." unique_id=1072602627 instance=ExtResource("1_r2ygg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.262, 0, 0.115)
 mesh = ExtResource("5_60w3k")
+
+[node name="Empty1" type="MeshInstance3D" parent="." unique_id=989542207]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32.718246, 0, -0.57714844)
+mesh = SubResource("BoxMesh_sdtv6")
+
+[node name="Empty2" type="MeshInstance3D" parent="." unique_id=230818606]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 51.92444, 0, -0.57714844)
+mesh = SubResource("BoxMesh_sdtv6")
+
+[node name="Empty3" type="MeshInstance3D" parent="." unique_id=1554903007]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 71.1592, 0, -0.57714844)
+mesh = SubResource("BoxMesh_sdtv6")
+
+[node name="Empty4" type="MeshInstance3D" parent="." unique_id=562978240]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 90.94999, 0, -0.57714844)
+mesh = SubResource("BoxMesh_sdtv6")
+
+[node name="Empty5" type="MeshInstance3D" parent="." unique_id=1782529394]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 111.95211, 0, -0.57714844)
+mesh = SubResource("BoxMesh_sdtv6")
+
+[node name="Empty6" type="MeshInstance3D" parent="." unique_id=2067895953]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 132.00739, 0, -0.57714844)
+mesh = SubResource("BoxMesh_sdtv6")
